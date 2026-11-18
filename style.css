@@ -57,6 +57,17 @@ body {
   gap: 8px;
 }
 
+.menu-toggle {
+  display: none;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+
 .nav-links a {
   padding: 8px 12px;
   border-radius: 6px;
@@ -159,16 +170,24 @@ h1 {
   .navbar {
     width: min(100% - 32px, 1040px);
     min-height: auto;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 8px;
     padding: 16px 0 12px;
+  }
+
+  .menu-toggle {
+    display: block;
   }
 
   .nav-links {
     width: 100%;
     flex-wrap: wrap;
     gap: 2px;
+    display: none;
+  }
+
+  .navbar.menu-open .nav-links {
+    display: flex;
   }
 
   .nav-links a {
