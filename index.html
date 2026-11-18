@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
+  <meta name="description" content="Shabi's portfolio: full-stack development, AI, and DevOps.">
+  <title>Shabi | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="title">
-      <p>Welcome to My Portfolio</p>
-    </div>
-    <div class="nav-links">
-      <a href="https://shabi01.vercel.app/">Home</a>
-      <a href="https://shabi01.vercel.app/blog">Blog</a>
-      <p>About Me</p>
-      <p>Contact info</p>
+  <header class="site-header" id="home">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#home">Shabi<span>.</span></a>
+      <div class="nav-links">
+        <a href="https://shabi01.vercel.app/">Home</a>
+        <a href="https://shabi01.vercel.app/blog">Blog</a>
+        <a href="#about">About me</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-    </div>
-  </nav>
-<div>
-    <p>Hello, I'm Shabi, a B.Tech student passionate about Full-Stack Development, Artificial Intelligence, and
-      DevOps. I enjoy building scalable web applications, developing agentic AI systems, and exploring emerging
-      technologies. I have hands-on experience with technologies like Next.js, TypeScript, Python, FastAPI, and modern
-      AI frameworks. I'm constantly learning, building innovative projects, and challenging myself through hackathons
-      and real-world problem-solving.</p>
-  </div>
+  <main>
+    <section class="intro" id="about">
+      <p class="eyebrow">B.Tech student · Developer</p>
+      <h1>Hi, I'm Shabi.</h1>
+      <p class="intro-copy">
+        I'm passionate about full-stack development, artificial intelligence, and DevOps.
+        I enjoy building useful web applications and exploring emerging technologies.
+        I work with tools like Next.js, TypeScript, Python, and FastAPI, and keep learning
+        through projects, hackathons, and real-world problem-solving.
+      </p>
+      <a class="contact-button" href="#contact">Get in touch</a>
+    </section>
+
+    <section class="contact" id="contact" aria-label="Contact">
+      <h2>Let's connect</h2>
+      <p>Have a project or opportunity in mind? <a href="https://shabi01.vercel.app/">Visit my portfolio</a>.</p>
+    </section>
+  </main>
+
   <script src="script.js"></script>
 </body>
-
 </html>
