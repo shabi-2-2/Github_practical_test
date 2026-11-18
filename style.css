@@ -1,23 +1,61 @@
-.navbar {
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+}
+
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 10px 20px;
+  padding: 14px 32px;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .title p {
   margin: 0;
-  font-weight: bold;
+  color: #1e3a5f;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 8px;
 }
 
+.nav-links a,
 .nav-links p {
   margin: 0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #475569;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  background: #e8eef5;
+  color: #1e3a5f;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 2px;
+  }
 }
