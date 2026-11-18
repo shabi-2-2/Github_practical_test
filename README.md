@@ -1,2 +1,4 @@
 # Github_practical_test
-A repo for Midsem Practical Test(Git &amp; Github)
+## Section: A
+## URN : E25B031553
+## SEMESTER : 3
